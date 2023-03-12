@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .link {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a::after {
+            content: '';
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid #000;
+            margin-left: 10px;
+            animation: arrow 1s ease-in-out infinite;
+        }
+
+        @keyframes arrow {
+            0% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(10px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .typing-animation {
+            font-family:monospace ;
+            font-size: 1.2rem;
+            border-right: 2px solid #000;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 5s steps(25, end) infinite alternate;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 26%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="link">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACT</a>
+    </div>
+    <p class="typing-animation">Bonjour je suis un texte animé!</p>
+</body>
+
+</html>

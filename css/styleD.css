@@ -1,0 +1,246 @@
+.myHover{
+    z-index: 1;
+    height: 200px;
+    width: 200px;
+}
+
+.imageHover{
+    height: 200px;
+    width: 200px;
+    opacity: 1;
+    transition: .5s;
+    border-radius: 2%;
+}
+.bgHover{
+    height: 200px;
+    width: 200px;
+    margin-top: -200px;
+    opacity: 0;
+    transition: .5s;
+    border-radius: 2%;
+}
+.icons{
+    height: 200px;
+    width: 200px;
+    margin-top: -200px;
+    opacity: 0;
+    transition: .5s;
+}
+.myHover:hover img{
+    opacity: 0 !important;
+}
+.myHover:hover .bgHover{
+    background-color: black;
+    opacity: 1;
+}
+.myHover:hover .icons{
+    opacity: 1;
+}
+@media screen and (max-width: 285px) {
+    .containerHover{
+        width: 200px !important;
+    }
+    .myHover{
+        height: 200px;
+        width: 200px;
+    }
+    .imageHover{
+        height: 200px;
+        width: 200px;
+        opacity: 1;
+    }
+    .bgHover{
+        height: 200px;
+        width: 200px;
+        margin-top: -200px;
+    }
+    .icons{
+        height: 200px;
+        width: 200px;
+        margin-top: -200px;
+        opacity: 1 !important;
+    }
+    .myHover:hover .bgHover{
+        background-color: black;
+        opacity: 0;
+    }
+    .myHover:hover img{
+        opacity: 1 !important;
+    }
+    .bgHover i{
+        opacity: 0;
+    }
+}
+@media screen and (min-width: 286) and (max-width: 385px) {
+    .containerHover{
+        width: 286px;
+    }
+    .myHover{
+        height: 286px;
+        width: 286px;
+    }
+    .imageHover{
+        height: 286px;
+        width: 286px;
+        opacity: 1;
+    }
+    .bgHover{
+        height: 286px;
+        width: 286px;
+        margin-top: -286px;
+    }
+    .icons{
+        height: 286px;
+        width: 286px;
+        margin-top: -286px;
+        opacity: 1 !important;
+    }
+    .myHover:hover .bgHover{
+        background-color: black;
+        opacity: 0;
+    }
+    .myHover:hover img{
+        opacity: 1 !important;
+    }
+    .bgHover i{
+        opacity: 0;
+    }
+}
+@media screen and (min-width: 386px) and (max-width:450px) {
+    .containerHover{
+        width: 350px;
+    }
+    .myHover{
+        height: 350px;
+        width: 350px;
+    }
+    .imageHover{
+        height: 350px;
+        width: 350px;
+        opacity: 1;
+    }
+    .bgHover{
+        height: 350px;
+        width: 350px;
+        margin-top: -350px;
+    }
+    .icons{
+        height: 350px;
+        width: 350px;
+        margin-top: -350px;
+        opacity: 1 !important;
+    }
+    .myHover:hover .bgHover{
+        background-color: black;
+        opacity: 0;
+    }
+    .myHover:hover img{
+        opacity: 1 !important;
+    }
+    .bgHover i{
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width: 451px) and (max-width:575px) {
+    .containerHover{
+        width: 450px;
+    }
+    .myHover{
+        height: 450px;
+        width: 450px;
+    }
+    .imageHover{
+        height: 450px;
+        width: 450px;
+    }
+    .bgHover{
+        height: 450px;
+        width: 450px;
+        margin-top: -450px;
+    }
+    .icons{
+        height: 450px;
+        width: 450px;
+        margin-top: -450px;
+        opacity: 1 !important;
+    }
+    .myHover:hover .bgHover{
+        background-color: black;
+        opacity: 0;
+    }
+    .myHover:hover img{
+        opacity: 1 !important;
+    }
+    .bgHover i{
+        opacity: 0;
+    }
+}
+@media screen and (min-width: 576px) and (max-width:770px) {
+    .containerHover{
+        width: 576px;
+    }
+    .myHover{
+        height: 576px;
+        width: 576px;
+    }
+    .imageHover{
+        height: 576px;
+        width: 576px;
+    }
+    .bgHover{
+        height: 576px;
+        width: 576px;
+        margin-top: -576px;
+    }
+    .icons{
+        height: 576px;
+        width: 576px;
+        margin-top: -576px;
+        opacity: 1 !important;
+    }
+    .myHover:hover .bgHover{
+        background-color: black;
+        opacity: 0;
+    }
+    .myHover:hover img{
+        opacity: 1 !important;
+    }
+    .bgHover i{
+        opacity: 0;
+    }
+}
+@media screen and (min-width: 771px) and (max-width:900px) {
+    .containerHover{
+        width: 750px;
+    }
+    .containerHover{
+        width: 700px;
+    }
+    .myHover{
+        height: 300px;
+        width: 300px;
+    }
+    .imageHover{
+        height: 300px;
+        width: 300px;
+    }
+    .bgHover{
+        height: 300px;
+        width: 300px;
+        margin-top: -300px;
+    }
+    .icons{
+        height: 300px;
+        width: 300px;
+        margin-top: -300px;
+        opacity: 0;
+        transition: .5s;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    .containerHover{
+        width: 750px;
+    }
+}

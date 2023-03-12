@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#mainAnimation{
+    animation: bgc 7s;
+    position: absolute;
+    position: fixed;
+    z-index: 999;
+}
+@keyframes bgc {
+    from{
+        background-color: rgba(0, 0, 0, 0.952);
+    }
+    to{
+        background-color: rgba(0, 0, 0, 0.438);
+    }
+}
+@media screen and (min-width:915.8px){
+    #left{
+        transform: translate(33vw,22vh);
+        animation: left 1.5s linear ;
+        height: 20vh;
+    }
+    #right{
+        transform: translate(32vw,54vh);
+        animation: right 1.5s linear;
+        height: 15vh;
+    }
+    #middle{
+        transform: translate(33vw,39vh);
+        height: 18vh;
+    }
+    @keyframes left {
+        0%{
+            transform: translate(5vw,0vh);
+        }
+        100%{
+            transform: translate(33vw,22vh);
+        }
+    }
+    @keyframes right {
+        0%{
+            transform: translate(60vw,70vh);
+        }
+        100%{
+            transform: translate(32vw,54vh);
+        }
+    }
+}
+@media screen and (min-width:540px) and (max-width:915px){
+    #left{
+        transform: translate(4vw,22vh);
+        height: 20vh;
+    }
+    #right{
+        transform: translate(4vw,48vh);
+        height: 15vh;
+    }
+    #middle{
+        transform: translate(5vw,35vh);
+        height: 18vh;
+    }
+    #animation{
+        animation: scale 1.5s linear;
+        height: 25vw;
+    }
+    @keyframes scale {
+        0%{
+            transform: scale(0.5);
+        }
+        100%{
+            transform: scale(1.0);
+        }
+    }
+}
+@media screen and (min-width:394px) and (max-width:539.8px){
+    #left{
+        transform: translate(0vw,30vh);
+        height: 15vh;
+    }
+    #right{
+        transform: translate(83vw,38vh);
+        height: 10vh;
+    }
+    #middle{
+        transform: translate(0vw,40vh);
+        height: 13vh;
+    }
+    #animation{
+        animation: scale 1.5s linear;
+    }
+    @keyframes scale {
+        0%{
+            transform: scale(0.5);
+        }
+        100%{
+            transform: scale(1.0);
+        }
+    }
+}
+@media screen and (min-width:376px) and (max-width:393.98px){
+    #left{
+        transform: translate(0vw,30vh);
+        height: 15vh;
+    }
+    #right{
+        transform: translate(83vw,38vh);
+        height: 10vh;
+    }
+    #middle{
+        transform: translate(0vw,40vh);
+        height: 13vh;
+    }
+    #animation{
+        animation: scale 1.5s linear;
+    }
+    @keyframes scale {
+        0%{
+            transform: scale(0.5);
+        }
+        100%{
+            transform: scale(1.0);
+        }
+    }
+}
+@media screen and (min-width:281px) and (max-width:375.98px){
+    #left{
+        transform: translate(6vw,30vh);
+        height: 15vh;
+    }
+    #right{
+        transform: translate(4vw,50vh);
+        height: 10vh;
+    }
+    #middle{
+        transform: translate(6vw,40vh);
+        height: 13vh;
+    }
+    #animation{
+        animation: scale 1.5s linear;
+    }
+    @keyframes scale {
+        0%{
+            transform: scale(0.5);
+        }
+        100%{
+            transform: scale(1.0);
+        }
+    }
+}
+@media screen and (max-width:280.98px){
+    #left{
+        transform: translate(4vw,30vh);
+        height: 15vh;
+    }
+    #right{
+        transform: translate(83vw,37vh);
+        height: 10vh;
+    }
+    #middle{
+        transform: translate(0vw,40vh);
+        height: 13vh;
+    }
+    #animation{
+        animation: scale 1.5s linear;
+    }
+    @keyframes scale {
+        0%{
+            transform: scale(0.5);
+        }
+        100%{
+            transform: scale(1.0);
+        }
+    }
+}

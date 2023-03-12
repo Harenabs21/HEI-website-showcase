@@ -1,0 +1,280 @@
+html{
+    scroll-behavior: smooth;
+}
+.teamIcon i{
+    transition: .5s;
+}
+.teamIcon i:hover{
+    color: #dfa408;
+}
+.Icons {
+    background-color: rgb(117,117,117,0.5);
+}
+.Icons:hover{
+    background-color: grey;
+}
+
+.btn_send_message:hover{
+    background-color: rgb(255, 191, 0);
+    color: black;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar{
+    background-color:#212529;
+}
+.account{
+    margin-left: -50px;
+}
+.icon{
+    margin-left: 20px;
+}
+.Icon{
+    transition: .5s;
+}
+.Icon:hover{
+    color: #dfa408;
+    transform: scale(1.3);
+}
+.school{
+    color: #dfa408;
+    font-family: 'Alegreya', serif;
+    font-size: 55px;
+    margin-top: 3em;
+    animation: scale 1 2s ;
+}
+.avg{
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+}
+/* @keyframes scale{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+} */
+/* .introductionBackground{
+    z-index: -5;
+    background: url('../image/backgroundimage1.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin-top: -100vh;
+} */
+.introduction{
+    background: url('../image/backgroundimage1.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.menu ul li a{
+    position: relative;
+    width: max-content;
+}
+.menu ul li a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #dfa408;
+    transition: transform 0.6s ease-in-out;
+}
+.menu ul li a:hover::after{
+    transform: scaleX(1);
+}
+.hidden{
+    display: none;
+}
+.sign-in:hover{
+    color: white;
+    
+}
+.sign-in{
+    animation: sign 1 4s;
+}
+.arrow{
+    margin-left:48vw;
+    margin-top: 10em;
+    animation: arrow 5s 1;
+}
+/* @keyframes arrow {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes sign{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+} */
+.pro{
+    animation: espace 1 3s;
+}
+/* @keyframes espace{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+} */
+
+@media screen and (max-width:576px){
+    .logo{
+        margin-left: 120px;
+    }
+}
+
+#mainForm{
+    height: 105vh;
+}
+.firstText{
+    width: 45vw;
+}
+#secondText{
+    width: 50vw;
+}
+#birthInput,#nameInput,#baccInput,#sANDmInput,#parentInput{
+    height: 7vh;
+    width: 40vw;
+}
+#phonestdInput{
+    height: 7vh;
+    width: 15vw;
+}
+#pAndCdrAndNote{
+    width: 68vw;
+}
+#serieInput,#mentionInput{
+    height: 7vh;
+    width: 18vw;
+}
+#sendBtn{
+    background-color: rgb(248, 164, 9);
+    color: white;
+    border: none;
+}
+#sendBtn:hover{
+    background-color: black;
+}
+@media screen and (max-width:991.98px) {
+    #mainForm{
+        height: 125vh;
+    }
+    #nameInput{
+        height: 5vh;
+        width: 60vw;
+    }
+    #birthInput,#baccInput,#phonestdInput,#parentInput{
+        height: 5vh;
+        width: 60vw;
+    }
+    #parentInput{
+        height: 13.5vh;
+        width: 60vw;
+    }
+    #phoneParentInput,#nomParentInput{
+        height: 5vh;
+        width: 60vw;
+    }
+    #serieInput,#mentionInput{
+        height: 7vh;
+        width: 60vw;
+    }
+    #sANDmInput{
+        height: 5vh;
+        width: 60vw;
+        margin-bottom:17vh;
+    }
+    .firstText{
+        width: 65vw;
+    }
+    #secondText{
+        width: 65vw;
+    }
+}
+.hidden{
+    display: none;
+    visibility: hidden;
+}
+
+@media screen and (max-width:580px){
+    #formulaire_footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #btn_footer{
+        margin-top: 10px;
+    }
+}
+
+.linkHover li{
+    width: max-content;
+    cursor: pointer;
+}
+.linkHover li::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 0;
+    background-color: #dfa408 !important;
+    transition: width 0.3s ease-out;
+    width: 0%;
+    bottom: -6px;
+}
+.linkHover li:hover::after{
+    width: 100%;
+}
+.linkHover li:hover{
+    color: #dfa408;
+}
+
+@media screen and (max-width:1000px){
+    .liste_footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+#progress{
+    display: none;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+#progress-value{
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: white;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+}

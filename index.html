@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/all.css">
+  <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styleD.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="shortcut icon" href="image/Logo.png" type="image/png/">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap" rel="stylesheet">
+  <script src="bootstrap-5.2.3-dist/js/bootstrap.js" defer></script>
+  <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.js" defer></script>
+  <script src="js/jquery-3.6.3.min.js" defer></script>
+  <script src="js/script.js" defer></script>
+  <script src="js/animation.js" defer></script>
+  <title>Haute École d'Informatique</title>
+</head>
+
+<body>
+  <div id="progress">
+    <span id="progress-value">
+      <i class="fa-sharp fa-solid fa-arrow-up"></i>
+    </span>
+  </div>
+  <div id="mainAnimation" style="width: 100vw;height: 100vh;">
+    <div id="animation">
+      <img src="image/left.png" alt="left" id="left">
+      <img src="image/middle.png" alt="middle" id="middle">
+      <img src="image/right.png" alt="right" id="right">
+    </div>
+  </div>
+  <header>
+    <nav class="navbar bg-dark d-flex align-items-center sm-justify-content-between fixed-top">
+      <div class="container-fluid justify-content-around  mx-15 ">
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <i class="fa-regular fa-solid fa-bars"></i>
+        </button>
+        <div class="browse offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar">
+          <div class="offcanvas-header">
+            <img src="image/logo.png" class="img w-25" alt="logo">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body menu">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link text-white active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#pricing">A PROPOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#valeur">VALEUR DE HEI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#our_works">EVENEMENTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#our_team">NOTRE EQUIPE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#stats_testimonial">STATISTIQUES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#message">NOUS REJOINDRE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#footer">NOUS CONTACTEZ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <img src="image/logo.png" class="logo" width="70" height="50" alt="logo HEI">
+        <div class=" d-flex align-items-center d-none d-md-block justify-content-between account">
+          <a href="https://www.facebook.com/hei.school" class="icon text-white"><i
+              class=" Icon fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/company/hei-school/" class="icon text-white"><i
+              class="Icon fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/hei.school/" class="icon text-white"><i
+              class="Icon fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="first" class="container-fluid introduction">
+    <div class="text-center py-5 px-4 ">
+      <h1 class="display-5 school  " id="school">Haute École d'Informatique </h1>
+      <div class="col-lg-6 mx-auto ">
+        <p class="my-5 text-white pro " id="pro">Professionnels du monde entier unis pour former les étudiants
+          malgaches suivant les plus hauts standards.</p>
+        <button type="button" onclick="window.location.href='#message'" id="sign-in"
+          class=" sign-in btn btn-outline-warning px-4">Inscrivez-vous
+          ici</button>
+      </div>
+    </div>
+    <div class=" mt-5 arrow">
+      <a href="#footer" class="text-white"><i class="fa-sharp fa-solid fa-arrow-down"></i></a>
+    </div>
+  </section>
+
+  <main>
+    <!--  PARTI FAIT PAR SHEDDS  -->
+
+    <section id="pricing" class="container w-75">
+      <div class="text-center ">
+        <h1 class="mt-3 cdtn fw-bold" style="font-family:'Alegreya', serif ;">A propos</h1>
+        <p class="fs-5 " id="definition">
+          <span style="color: #dfa408;">HEI</span> est une école supérieure qui offre une formation professionalisante
+          dans le domaine de l'Informatique
+          jusqu'au diplôme de la licence.
+        </p>
+      </div>
+      <article class="row row-cols-sm-2 row-cols-md-3 row-cols-1 g-2 mt-5">
+        <div class="col">
+          <div class="avg">
+            <i class="fa-regular fa-clipboard fa-2x" style="color: #008013c5;"></i>
+            <div class="">
+              <h2 class="fs-5" style="color: #008013c5;">Inscription</h2>
+              <p class="text-secondary">
+                L'inscriprion est ouverte à tout étudiant ayant passé avec succès les <span
+                  style="font-weight: bold;text-decoration: underline;">concours d'entrées</span>
+                organisé par HEI, qui se base sur les français et les mathématiques.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="avg">
+            <i class="fa-solid fa-coins fa-2x" style="color: #008013c5;"></i>
+            <div class="">
+              <h2 class="fs-5" style="color: #008013c5;">Frais de scolarité</h2>
+              <p class="text-secondary">
+                Frais de scolarité par an: <br>
+                -Si payé en une fois: <b>1.740.000 Ar</b><br>
+                -Si payé en 9 mensualités: <b>240.000 Ar</b> pour la première mensualité et
+                <b>215.000 Ar</b> pour les 8 autres.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="avg">
+            <i class="fa-solid fa-sack-dollar fa-2x" style="color: #008013c5;"></i>
+            <div class="">
+              <h2 class="fs-5" style="color: #008013c5;">Bourses d'études</h2>
+              <p class="text-secondary">
+                Alignéee avec ses valeurs d'entraide et d'autonomie, HEI va octroyer une bourse d'excellence à hauteur
+                de <b>8900€(40.000.000 Ar)</b>
+                pour le/la <b>major de la promotion</b> afin de poursuivre ses études en France
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="avg">
+            <i class="fa-solid fa-laptop-code fa-2x" style="color: #dfa408;"></i>
+            <div class="">
+              <h2 class="fs-5" style="color: #dfa408;">Matériels & divers</h2>
+              <p class="text-secondary">
+                HEI dispose d'un laboratoire informatique équipé en stations de travail, <b>Raspberries et d' objets
+                  connectés</b>(fibre optique).
+                Mais il est toujours préférable que les étudiants disposent de leurs propres outils de travail.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="avg">
+            <i class="fa-sharp fa-solid fa-clipboard-list fa-2x" style="color: #dfa408;"></i>
+            <div class="">
+              <h2 class="fs-5" style="color: #dfa408;">Les filières</h2>
+              <p class="text-secondary">
+                Nous proposons deux parcours distincts: <b>Ecosystèmes logiciels (EL)</b> et <b>Transformations
+                  Numériques (TN)</b> sanctionnés par le diplôme <b>Licence</b>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="avg">
+            <i class="fa-solid fa-network-wired fa-2x" style="color: #dfa408;"></i>
+            <div class="">
+              <h2 class="fs-5" style="color: #dfa408;">Méthode d'enseignement</h2>
+              <p class="text-muted">
+                <b>-Modules techniques en informatiques</b> selon le parcours choisi: Les cours théorique à distance
+                <b>(25%)</b> + cours présentiels <b>(25%)</b> <br>
+                <b>-Apprentissage en entreprise(50%):</b>application pratique suivant un contrat d'alternance.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </article>
+    </section>
+
+    <section class="mt-5 container w-50" id="valeur">
+      <div class="text-center">
+        <h1 class="valeur fw-bold" style="font-family:'Alegreya', serif ;">Les valeurs de <span
+            class="text-warning">HEI</span></h1>
+        <p class="fs-5 valeurs">
+          Chez HEI, nous donnons beaucoup d'importance aux trois points suivants: l'autonomie, l'entraide et la
+          performance.
+        </p>
+      </div>
+      <article class="row row-cols-sm-2 row-cols-md-3 row-cols-1 g-2 mt-5">
+        <div class="col val">
+          <div class="text-center" id="about">
+            <div class="Icons rounded-circle text-center mx-auto py-3" style="height: 90px; width: 90px;">
+              <i class="fas fa-light fa-puzzle-piece px-3 mx-2 fa-3x"></i> <!-- px = position x ~~ py -->
+            </div>
+            <div class="">
+              <h2 class="fs-5 my-2">Autonomie</h2>
+              <p class="text-muted">
+                Faculté de se déterminer par soi-même, de choisir, d'agir librement
+              </p>
+              <button type="button" id="btn_start" class="my-4 btn btn-dark btn_send_message border rounded-1">LEARN
+                MORE</button>
+              <!--outline-->
+            </div>
+          </div>
+        </div>
+        <div class="col val">
+          <div class="text-center">
+            <div class="Icons rounded-circle text-center mx-auto py-3" style="height: 90px; width: 90px;">
+              <i class="fas fa-solid fa-handshake py-2 fa-3x"></i> <!-- px = position x ~~ py -->
+            </div>
+            <div class="">
+              <h2 class="fs-5 my-2">Entraide</h2>
+              <p class="text-muted">
+                On est plus fort ensemble que d'être seule, et pour aller plus loin encore
+              </p>
+              <button type="button" class="my-4 btn btn-dark btn_send_message border rounded-1">LEARN MORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="col val">
+          <div class="text-center">
+            <div class="Icons rounded-circle text-center mx-auto py-3 ml-2" style="height: 90px; width: 90px;">
+              <i class="fas fa-solid fa-bolt py-2 fa-3x"></i> <!-- px = position x ~~ py -->
+            </div>
+            <div class="">
+              <h2 class="fs-5 my-2">Performance</h2>
+              <p class="text-muted">
+                Faire un tel travail en si peu de temps, c'est notre véritable performance.
+              </p>
+              <button type="button" class="my-4 btn btn-dark btn_send_message border rounded-1">LEARN MORE</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!--   PARTI FAIT PAR DARIS    -->
+
+    <!-- Our works -->
+    <section id="our_works" class="my-5">
+      <div class="text-center my-5 mx-auto w-50">
+        <h1 class="event fw-bold" style="font-family:'Alegreya',  serif ;">Évènements</h1>
+        <p class="events">
+          HEI organise des evenements pour augmenter l'experience de ces etudiants et/ou
+          pour avoir plus de relation dans le monde professionnel.
+        </p>
+      </div>
+      <!-- Part of column -->
+      <div class="container containerHover mx-auto">
+        <div class="row g-3">
+          <div class="col my-5 mx-auto text-center">
+            <div class="myHover mx-auto px-0 mb-5">
+              <img class="img imageHover" src="image/Journee-dintegration-2022.png" alt="">
+              <div class="bgHover">
+                <div class="position-relative text-white h-100 w-100">
+                  <i
+                    class="fa-sharsp fa-solid fa-circle-plus fa-2x position-absolute top-50 start-50 translate-middle"></i>
+                </div>
+              </div>
+              <div class="icons">
+                <div class="position-relative text-white h-100 w-100">
+                  <i class="far fa-calendar-days m-2 position-absolute bottom-0 end-0"> 22/12/22</i>
+                </div>
+              </div>
+
+              <div class="container">
+                <h5 class="mt-2 font-weight-bold">Journée d’intégration 2022</h5>
+                <p class="text-secondary">
+                  C’était l’occasion de renforcer la cohésion entre étudiants.
+                </p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col my-5 mx-auto text-center">
+            <div class="myHover mx-auto px-0 mb-5">
+              <img class="img imageHover" src="image/TalksHEI-1.png" alt="">
+              <div class="bgHover">
+                <div class="position-relative text-white h-100 w-100">
+                  <i
+                    class="fa-sharsp fa-solid fa-circle-plus fa-2x position-absolute top-50 start-50 translate-middle"></i>
+                </div>
+              </div>
+              <div class="icons">
+                <div class="position-relative text-white h-100 w-100">
+                  <i class="far fa-calendar-days m-2 position-absolute bottom-0 end-0"> 08/09/22</i>
+                </div>
+              </div>
+
+              <div class="container">
+                <h5 class="mt-2 font-weight-bold">Talks HEI 1: Les soft-skills dans la tech</h5>
+                <p class="text-secondary">
+                  Technical skill are important.
+                </p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col my-5 mx-auto text-center">
+            <div class="myHover mx-auto px-0 mb-5">
+              <img class="img imageHover" src="image/BattelDev.jpg" alt="">
+              <div class="bgHover">
+                <div class="position-relative text-white h-100 w-100">
+                  <i
+                    class="fa-sharsp fa-solid fa-circle-plus fa-2x position-absolute top-50 start-50 translate-middle"></i>
+                </div>
+              </div>
+              <div class="icons">
+                <div class="position-relative text-white h-100 w-100">
+                  <i class="far fa-calendar-days m-2 position-absolute bottom-0 end-0"> 02/04/22</i>
+                </div>
+              </div>
+
+              <div class="container">
+                <h5 class="mt-2  font-weight-bold">Battle dev</h5>
+                <p class="text-secondary">
+                  HEI organise un concours de programmation entre ses étudiants.
+                </p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col my-5 mx-auto text-center">
+            <div class="myHover mx-auto px-0 mb-5">
+              <img class="img imageHover" src="image/JourneMotivationel.jpg" alt="">
+              <div class="bgHover">
+                <div class="position-relative text-white h-100 w-100">
+                  <i
+                    class="fa-sharsp fa-solid fa-circle-plus fa-2x position-absolute top-50 start-50 translate-middle"></i>
+                </div>
+              </div>
+              <div class="icons">
+                <div class="position-relative text-white h-100 w-100">
+                  <i class="far fa-calendar-days m-2 position-absolute bottom-0 end-0"> 06/04/22</i>
+                </div>
+              </div>
+
+              <div class="container">
+                <h5 class="mt-2  font-weight-bold">Journée motivationnelle</h5>
+                <p class="text-secondary">
+                  HEI inspire ses étudiants.
+                </p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col my-5 mx-auto text-center">
+            <div class="myHover mx-auto px-0 mb-5">
+              <img class="img imageHover" src="image/Ebauche-1.png" alt="">
+              <div class="bgHover">
+                <div class="position-relative text-white h-100 w-100">
+                  <i
+                    class="fa-sharsp fa-solid fa-circle-plus fa-2x position-absolute top-50 start-50 translate-middle"></i>
+                </div>
+              </div>
+              <div class="icons">
+                <div class="position-relative text-white h-100 w-100">
+                  <i class="far fa-calendar-days m-2 position-absolute bottom-0 end-0"> 10/11/22</i>
+                </div>
+              </div>
+
+              <div class="container">
+                <h5 class="mt-2  font-weight-bold">Talks HEI 2: Inspirer les jeunes</h5>
+                <p class="text-secondary">
+                  Nous travaillons avec des entreprises.
+                </p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col my-5 mx-auto text-center">
+            <div class="myHover mx-auto px-0 mb-5">
+              <img class="img imageHover" src="image/ibonia.jpeg" alt="">
+              <div class="bgHover">
+                <div class="position-relative text-white h-100 w-100">
+                  <i
+                    class="fa-sharsp fa-solid fa-circle-plus fa-2x position-absolute top-50 start-50 translate-middle"></i>
+                </div>
+              </div>
+              <div class="icons">
+                <div class="position-relative text-white h-100 w-100">
+                  <i class="far fa-calendar-days m-2 position-absolute bottom-0 end-0"> 04/04/22</i>
+                </div>
+              </div>
+
+              <div class="container">
+                <h5 class="mt-2  font-weight-bold">Journée des entreprises</h5>
+                <p class="text-secondary">
+                  HEI invite chez elle quelques entreprises.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="our_team">
+      <div class="text-center">
+        <h1 class="team fw-bold" style="font-family:'Alegreya' ,serif ;">Notre équipe</h1>
+        <p class="teams mx-auto firstText">
+          Un aperçu de l’équipe pédagogique.
+        </p>
+      </div>
+
+      <div id="team" class="mx-auto w-75">
+        <div class="row row-cols-sm-2 row-cols-md-4 row-cols-1 g-3 mt-5">
+          <article class="col text-center one">
+            <img class="img border rounded-circle mb-3 w-75" src="image/Tahina.png" alt="">
+            <h5 class="font-weight-bold">Tahina Ralitera</h5>
+            <p class="text-secondary my-2">
+              Docteure-Ingénieure, CEA, Saclay.
+            </p>
+            <div class="container my-3 teamIcon">
+              <i class="fas fa-brands fa-facebook-f"></i>
+              <i class="fas fa-brands fa-twitter"></i>
+              <i class="fas fa-brands fa-linkedin-in"></i>
+            </div>
+          </article>
+          <article class="col text-center two">
+            <img class="img border rounded-circle mb-3 w-75" src="image/Yannick.png" alt="">
+            <h5 class="font-weight-bold">Yannick Raharijaona</h5>
+            <p class="text-secondary my-3">
+              ML Tech Lead, Rocket Science, Ottawa.
+            </p>
+            <div class="container my-2 teamIcon">
+              <i class="fas fa-brands fa-facebook-f"></i>
+              <i class="fas fa-brands fa-twitter"></i>
+              <i class="fas fa-brands fa-linkedin-in"></i>
+            </div>
+          </article>
+          <article class="col text-center three">
+            <img class="img border rounded-circle mb-3 w-75" src="image/Parison.png" alt="">
+            <h5 class="font-weight-bold">Parison Ravalomanda</h5>
+            <p class="text-secondary my-2">
+              Ingénieur logiciel, Google, Londres.
+            </p>
+            <div class="container my-3 teamIcon">
+              <i class="fas fa-brands fa-facebook-f"></i>
+              <i class="fas fa-brands fa-twitter"></i>
+              <i class="fas fa-brands fa-linkedin-in"></i>
+            </div>
+          </article>
+          <article class="col text-center four">
+            <img class="img border rounded-circle mb-3 w-75" src="image/Sandrine.png" alt="">
+            <h5 class="font-weight-bold">Sandrine Ramaroson</h5>
+            <p class="text-secondary my-2">
+              Révélation Fintech de Women In Africa (2020).
+            </p>
+            <div class="container my-3 teamIcon">
+              <i class="fas fa-brands fa-facebook-f"></i>
+              <i class="fas fa-brands fa-twitter"></i>
+              <i class="fas fa-brands fa-linkedin-in"></i>
+            </div>
+          </article>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="container" id="stats_testimonial">
+      <div class="text-center">
+        <h1 class="fw-bold" style="font-family:'Alegreya', serif ;">Statistiques</h1>
+        <p class="mx-auto firstText">
+          Professionnels du monde entiers unis pour former les étudiants malgaches
+          suivant les plus hauts standards
+        </p>
+      </div>
+
+      <div class="container mx-auto w-50">
+        <section class="row row-cols-md-4 row-cols-sm-1 row-cols-lg-4 row-cols-1 align-items-center">
+          <article class="text-center">
+            <i class="fas fa-sack-dollar fa-2x my-3"></i>
+            <h3 class="fw-bold mt-2" id="time1">0</h3>
+            <p>Boursiers</p>
+          </article>
+          <article class="text-center">
+            <i class="fas fa-user-tie fa-2x my-3"></i>
+            <h3 class="fw-bold mt-2" id="time2">0</h3>
+            <p>Employés</p>
+          </article>
+          <article class="text-center">
+            <i class="fas fa-users fa-2x my-3"></i>
+            <h3 class="fw-bold mt-2" id="time3">0</h3>
+            <p>Etudiant</p>
+          </article>
+          <article class="text-center">
+            <i class="fas fa-building fa-2x my-3"></i>
+            <h3 class="fw-bold mt-2" id="time4">0</h3>
+            <p>Partenariat</p>
+          </article>
+        </section>
+      </div>
+
+      <div class="container Ryan mx-auto">
+        <section class="text-center my-5">
+          <div class="container w-75">
+            <img src="image/Ryan.png" alt="mrRyan" class="img border rounded-circle mb-3 w-25">
+          </div>
+          <h2>Ryan Andriamahery</h2>
+          <h6>Co-fondateur et Directeur des opérations,HEI</h6>
+          <article id="secondText" class="mx-auto">
+            <div class="d-flex flex-row">
+              <div>
+                <i class="fas fa-quote-left fa-1x mx-4"></i>
+              </div>
+              <div>
+                <p>
+                  Nous ne naissons pas excellents. Nous le devenons en nous
+                  inspirant et en apprenant de personnes qui sont meilleures que nous.
+                </p>
+              </div>
+              <div>
+                <i class="fas fa-quote-right fa-1x mx-4"></i>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+
+    </section>
+
+    <section class="container my-5" id="message">
+      <article class="text-center mx-auto join">
+        <h1 class="fw-bold mx-auto" style="font-family:'Alegreya', serif ;">Rejoignez la communauté de HEI</h1>
+        <p class="mx-auto w-50">
+          Nous recrutons de nouveaux groupes tout au long de l'année.<br>
+          Inscrivez-vous et nous vous informerons de la date de la prochaine rentrée.
+        </p>
+      </article>
+
+      <section class="container mt-2 mx-auto w-50 info">
+        <div class="row  row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3 text-center mx-auto mt-5">
+          <div class="col d-flex-column">
+            <i class="fas fa-location-dot fa-2x"></i>
+            <h5>Adress</h5>
+            <p>Ivandry,Ambodivoanjo, <br> Lot II j 161 R</p>
+          </div>
+          <div class="col d-flex-column">
+            <i class="fas fa-envelope fa-2x"></i>
+            <h5>E-mail</h5>
+            <p>contact@hei.school</p>
+          </div>
+          <div class="col d-flex-column">
+            <i class="fas fa-phone fa-2x"></i>
+            <h5>Phone</h5>
+            <p>+261 34 94 041 16</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="d-flex flex-column justify-content-between mt-5" id="mainForm">
+        <input type="text" placeholder="Nom et Prenoms" class="form-control border border-dark mx-auto" id="nameInput">
+        <form class="text-center">
+          <p> Date de naissance</p>
+          <input type="date" class="form-control border border-dark mx-auto" id="birthInput">
+        </form>
+        <form class="text-center">
+          <p> Année d'obtention du Bacc</p>
+          <input type="date" class="form-control border border-dark mx-auto" id="baccInput">
+        </form>
+        <section class="mx-auto row  row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2" id="sANDmInput">
+          <form class="text-center">
+            <p>Serie Au Bacc</p>
+            <select class="form-control border border-dark mx-auto" id="serieInput">
+              <option>Série A</option>
+              <option>Série C</option>
+              <option>Série D</option>
+              <option>Série L</option>
+              <option>Série S</option>
+              <option>Série OSE</option>
+            </select>
+          </form>
+          <form class="text-center">
+            <p>Mention au Bacc</p>
+            <select class="form-control border border-dark mx-auto" id="mentionInput">
+              <option>Mention Passable</option>
+              <option>Mention Assez-bien</option>
+              <option>Mention Bien</option>
+              <option>Mention Très bien</option>
+              <option>Mention Honorable</option>
+            </select>
+          </form>
+        </section>
+        <form
+          class="mx-auto row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 mt-5 d-flex justify-content-between"
+          id="parentInput">
+          <input type="tel" placeholder="Nom du Tuteur/Père/Mère" id="nomParentInput"
+            class="form-control border border-dark">
+          <input type="tel" placeholder="Numero du Tuteur/Père/Mère" id="phoneParentInput"
+            class="form-control border border-dark">
+        </form>
+        <form class="text-center">
+          <input type="tel" placeholder="Votre numero de télephone" id="phonestdInput" style="height: 7vh;"
+            class="form-control border-dark px-2 mx-auto">
+        </form>
+        <form class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-3 mx-auto" id="pAndCdrAndNote">
+          <div class="form-group text-center">
+
+            <h6>4 Photos récentes</h6>
+
+            <input type="file" class="form-control-file">
+          </div>
+          <div class="form-group text-center">
+
+            <h6>Certificat de résidence</h6>
+
+            <input type="file" class="form-control-file">
+          </div>
+          <div class="form-group text-center">
+
+            <h6>Relevé de note certifié du Bacc</h6>
+
+            <input type="file" class="form-control-file">
+          </div>
+        </form>
+        <div class="text-center ">
+          <div id="error" class="my2">
+            <h5 class="text-center text-danger">Remplissez toutes les cases!</h5>
+          </div>
+          <button type="button" class="my-2 px-5 py-2" id="sendBtn">S'inscrire</button>
+          <div class="mx-auto d-flex flex-row align-items-center" style="width: 10vw;" id="confirmation">
+            <h4 class="my-3" id="okeBtn">Inscrit(e)</h4>
+            <img src="image/true.png" alt="true" style="height: 35px;">
+          </div>
+        </div>
+      </section>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="bg-dark">
+    <section class="py-5">
+      <article class="col-12 col-lg-6 col-sm-8 m-auto text-center">
+        <h2 class="text-light fw-bold" style="font-family:'Alegreya', serif ;">Contacts</h2>
+        <p class="text-secondary w-75 mx-auto">
+          Nous recrutons de nouveaux groupes tout au long de l’année.
+          Contactez-nous pour plus d'informations.
+        </p>
+      </article>
+      <form action="input" class="d-flex justify-content-center flex-column flex-lg-row flex-sm-row"
+        id="formulaire_footer">
+        <input type="text" name="email" id="inputEmail" class="border-0 p-2 mx-1 col-sm-5 col-10 px-4"
+          placeholder="Entrez votre Email">
+        <button type="submit" class="p-2 btn-outline-dark border-0 col-sm-2 col-md-1 col-3"
+          id="btn_footer">submit</button>
+      </form>
+      <article class="col-7 row mx-auto text-light no-gutters py-5 " id="infos">
+        <div class=" col-lg-5 col-sm-12 liste_footer">
+          <h4 class="text-warning">HEI</h4>
+          <p class="text-secondary">
+            Le genie est fait d'un pour cent d'inspiration et de quatre-vingt-dix-neuf pour cent de transpiration
+          </p>
+        </div>
+        <ul class="list-unstyled col-lg-3 col-sm-12 px-4 liste_footer">
+          <h5>References</h5>
+          <li class="text-secondary">Ivandry, Lot II j 161 R</li>
+          <li class="text-secondary">Antananarivo, Madagascar</li>
+          <li class="text-secondary">contact@hei.school</li>
+          <li class="text-secondary">+261 34 94 041 16</li>
+        </ul>
+        <ul class="list-unstyled col-lg-2 col-sm-12 px-4 linkHover liste_footer">
+          <h5 onclick="window.location.href='#first'">Home</h5>
+          <li onclick="window.location.href='#pricing'">A propos</li>
+          <li onclick="window.location.href='#valeur'">Valeurs</li>
+          <li onclick="window.location.href='#our_works'">Évènements</li>
+          <li onclick="window.location.href='#stats_testimonial'">Statistiques</li>
+        </ul>
+        <ul class="list-unstyled col-lg-2 col-sm-12 px-4 linkHover liste_footer">
+          <h5>Social</h5>
+          <li onclick="window.location.href='https://www.facebook.com/hei.school'">facebook</li>
+          <li onclick="window.location.href='https://www.instagram.com/hei.school'">instagram</li>
+          <li onclick="window.location.href='https://www.linkedin.com/company/hei-school/'">linkedin</li>
+        </ul>
+      </article>
+    </section>
+  </footer>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+</body>
+
+</html>
